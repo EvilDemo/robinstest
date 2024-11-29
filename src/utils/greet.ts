@@ -1,18 +1,3 @@
-import { getPublishDate } from '@finsweet/ts-utils';
-
-/**
- * Greets the user by printing a message in the console.
- * @param name The user's name.
- */
-export const greetUser = (name: string) => {
-  const publishDate = getPublishDate();
-
-  console.log(`Hello ${name}!`);
-  console.log(
-    `This site was last published on ${publishDate?.toLocaleDateString('en-US', {
-      year: 'numeric',
-      month: 'long',
-      day: '2-digit',
-    })}.`
-  );
-};
+/*<script>
+"use strict";(()=>{document.addEventListener("DOMContentLoaded",function(){let e=new Lenis({duration:1.1,easing:n=>Math.min(1,1.001-Math.pow(2,-10*n)),smooth:!0}),i=0,o=1,t=$(".main-nav_wrap"),s=$(".hero_wrap"),l=!1;t.hide();function r(n){e.raf(n),requestAnimationFrame(r)}requestAnimationFrame(r),e.on("scroll",({scroll:n})=>{let c=n,p=s.offset().top+s.outerHeight();c>p?c>i?(l=!0,c>i+o&&t.fadeOut()):(l=!1,t.fadeIn()):t.fadeOut(),i=c}),e.stop();function d(){window.addEventListener("scroll",a,{passive:!1}),document.body.style.overflow="hidden"}function u(){window.removeEventListener("scroll",a,{passive:!1}),document.body.style.overflow="",e.start()}function a(n){return n.preventDefault(),n.stopPropagation(),!1}d();let f=document.getElementById("enableScrollButton");f&&f.addEventListener("click",u)});var m=(e,i=0)=>{let o=document.getElementById(e);if(o){let t=o,s=0;e==="contactSection"&&window.innerWidth>991&&(t=o.offsetTop+o.offsetHeight-window.innerHeight,s=100),e==="pressSection"&&(s=-50),gsap.to(window,{duration:2,scrollTo:{y:t,offsetY:s,autoKill:!1},ease:"power2.inOut"})}},S=()=>{let e={about:"aboutSection","about-sub":"aboutSection",services:"servicesSection","services-sub":"servicesSection",press:"pressSection","press-sub":"pressSection",contact:"contactSection","contact-sub":"contactSection"};for(let[i,o]of Object.entries(e)){let t=document.getElementById(i);t&&t.addEventListener("click",()=>m(o,0))}};document.addEventListener("DOMContentLoaded",S);})();
+</script>*/
